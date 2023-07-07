@@ -1,14 +1,27 @@
-What is symfony
--
+- Symfony is a free and open-source PHP web application framework and a set of reusable PHP component libraries
+- It's only used by one project here at Chillisoft and i
+  more than 600 000 devs are using it from more than 160 countries
+  - Documentation is good as well.
+  -cross platform
+
 
 Usage of symfony CLI
 -what does it do
 
 why use symfony?
+1. Faster Development
+2. Less Code to Write
+3. Libraries for Common Tasks
+4. Follow Good Coding Practices
+5. More Secure Than Writing Your Own Apps
+7. Easier to Maintain
+8. Database Migrations
+9. MVC
 
 setting up is very easy, as long as you follow the steps in the docs.
 
 need to look at "Local PHP Security Checker" and see how it works
+--The Local PHP Security Checker is a command line tool that checks if your PHP application depends on PHP packages with known security vulnerabilities
 
 --scalable
 --fast

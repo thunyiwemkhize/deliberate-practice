@@ -10,8 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class LuckyController extends AbstractController
 {
-
-    public function __construct(private LoggerInterface $logger){
+    public function __construct(){
 
     }
     /**
@@ -20,7 +19,20 @@ class LuckyController extends AbstractController
     #[Route('/lucky/number')]
     public function number(): Response
     {
-        $this->logger->info('I love Tony Vairelles\' hairdresser.');
         return new Response(random_int(0, 100));
+    }
+
+    /**
+     * @throws Exception
+     */
+    #[Route('/lucky/numberHtml')]
+    public function numberHtml(): Response
+    {
+        $number = random_int(0, 100);
+        return $this->render('lucky/number.html.twig',
+            [
+                'number' => $number
+            ]
+        );
     }
 }

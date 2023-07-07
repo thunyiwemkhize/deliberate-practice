@@ -1,2 +1,8 @@
 {# templates/lucky/number.html.twig #}
-<h1>Your lucky number is {{ number }}</h1>
+<h1>
+   {% if number > 50 %}
+      Your lucky number {{ number }} is greater than 50
+   {% else %}
+      Your lucky number {{ number }} is less than 50
+   {% endif %}
+</h1>
